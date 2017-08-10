@@ -22,7 +22,7 @@
   提示通用文本信息带图片
 
  @param msg 提示信息
- @param image icon
+ @param image icon自定义
  */
 + (void)showToastMsg:(NSString *)msg image:(UIImage *)image;
 /**
