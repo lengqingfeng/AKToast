@@ -17,8 +17,7 @@
 		48111FB91F175E00009A3D8B /* AKToastUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48111FB81F175E00009A3D8B /* AKToastUITests.m */; };
 		48111FC81F175E1E009A3D8B /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 48111FC71F175E1E009A3D8B /* MBProgressHUD.m */; };
 		48111FCB1F175E3E009A3D8B /* AKToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 48111FCA1F175E3E009A3D8B /* AKToast.m */; };
-		485364FA1F17652B00F60366 /* hudSuccess@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 485364F91F17652B00F60366 /* hudSuccess@2x.png */; };
-		485364FC1F17689400F60366 /* hudError@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 485364FB1F17689400F60366 /* hudError@2x.png */; };
+		48AFEAFE1F3BF5D80083CCDE /* AKToastResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 48AFEAFD1F3BF5D80083CCDE /* AKToastResource.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +58,7 @@
 		48111FC71F175E1E009A3D8B /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		48111FC91F175E3E009A3D8B /* AKToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKToast.h; sourceTree = "<group>"; };
 		48111FCA1F175E3E009A3D8B /* AKToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKToast.m; sourceTree = "<group>"; };
-		485364F91F17652B00F60366 /* hudSuccess@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hudSuccess@2x.png"; sourceTree = "<group>"; };
-		485364FB1F17689400F60366 /* hudError@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hudError@2x.png"; sourceTree = "<group>"; };
+		48AFEAFD1F3BF5D80083CCDE /* AKToastResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AKToastResource.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,8 +154,7 @@
 		48AFEAFC1F3BF2C50083CCDE /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				485364FB1F17689400F60366 /* hudError@2x.png */,
-				485364F91F17652B00F60366 /* hudSuccess@2x.png */,
+				48AFEAFD1F3BF5D80083CCDE /* AKToastResource.bundle */,
 				48111FC91F175E3E009A3D8B /* AKToast.h */,
 				48111FCA1F175E3E009A3D8B /* AKToast.m */,
 			);
@@ -270,11 +267,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				485364FA1F17652B00F60366 /* hudSuccess@2x.png in Resources */,
 				48111FA31F175E00009A3D8B /* LaunchScreen.storyboard in Resources */,
 				48111FA01F175E00009A3D8B /* Assets.xcassets in Resources */,
 				48111F9E1F175E00009A3D8B /* Main.storyboard in Resources */,
-				485364FC1F17689400F60366 /* hudError@2x.png in Resources */,
+				48AFEAFE1F3BF5D80083CCDE /* AKToastResource.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

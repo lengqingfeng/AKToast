@@ -21,7 +21,7 @@
 }
 
 - (IBAction)tostTest:(id)sender {
-    [AKToast showToastLoadingMsg:@"请稍等..."];
+    [AKToast showToastSuccessMsg:@"success"];
 }
 - (IBAction)hidenTOst:(id)sender {
     [AKToast hideToast];

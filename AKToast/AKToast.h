@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 @interface AKToast : NSObject
 +(instancetype)shareinstance;
 
@@ -17,6 +18,13 @@
  */
 + (void)showToastMsg:(NSString *)msg;
 
+/**
+  提示通用文本信息带图片
+
+ @param msg 提示信息
+ @param image icon
+ */
++ (void)showToastMsg:(NSString *)msg image:(UIImage *)image;
 /**
   提示成功文本信息
 
@@ -82,6 +90,9 @@
 + (void)showToastLoadingMsg:(NSString *)msg
                   graceTime:(float)graceTime
               dimBackground:(BOOL)dimBackground;
+
+
+
 
 /**
  隐藏toast

@@ -27,13 +27,19 @@ static NSInteger const hudFontSize = 15;
     [self showToastMsg:msg delay:1.8];
 }
 
-+ (void)showToastSuccessMsg:(NSString *)successMsg {
-    [self showToastMsg:successMsg delay:1.8 yOffset:0 hudImage:[UIImage imageNamed:@"hudSuccess"]];
++ (void)showToastMsg:(NSString *)msg image:(UIImage *)image {
+    [self showToastMsg:msg delay:1.8 yOffset:0 hudImage:image];
 }
 
-+ (void)showToastErrorMsg:(NSString *)errorMsg {
-    [self showToastMsg:errorMsg delay:1.8 yOffset:0 hudImage:[UIImage imageNamed:@"hudError"]];
++ (void)showToastSuccessMsg:(NSString *)successMsg {
+      UIImage *image = [UIImage imageNamed:[@"AKToastResource.bundle" stringByAppendingPathComponent:@"hudSuccess"]];
+    [self showToastMsg:successMsg delay:1.8 yOffset:0 hudImage:image];
 }
++ (void)showToastErrorMsg:(NSString *)errorMsg {
+    UIImage *image = [UIImage imageNamed:[@"AKToastResource.bundle" stringByAppendingPathComponent:@"hudError"]];
+    [self showToastMsg:errorMsg delay:1.8 yOffset:0 hudImage:image];
+}
+
 
 + (void)showToastMsg:(NSString *)msg delay:(NSTimeInterval)delay {
     [self showToastMsg:msg delay:delay yOffset:0];
