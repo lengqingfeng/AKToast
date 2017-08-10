@@ -15,18 +15,6 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-#   s.name         = 'MJRefresh'
-# s.version      = '3.1.12'
-# s.summary      = 'An easy way to use pull-to-refresh'
-# s.homepage     = 'https://github.com/CoderMJLee/MJRefresh'
-# s.license      = 'MIT'
-# s.authors      = {'MJ Lee' => '199109106@qq.com'}
-# s.platform     = :ios, '6.0'
-# s.source       = {:git => 'https://github.com/CoderMJLee/MJRefresh.git', :tag => s.version}
-# s.source_files = 'MJRefresh/**/*.{h,m}'
-# s.resource     = 'MJRefresh/MJRefresh.bundle'
-# s.requires_arc = true
-
   s.name         = "AKToast"
   s.version      = "0.0.1"
   s.summary      = "A short description of AKToast."
@@ -73,10 +61,8 @@ Pod::Spec.new do |s|
   #  If this Pod runs only on iOS or OS X, then specify the platform and
   #  the deployment target. You can optionally include the target after the platform.
   #
-
   s.platform     = :ios
   s.platform     = :ios, "8.0"
-
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
   # s.osx.deployment_target = "10.7"
