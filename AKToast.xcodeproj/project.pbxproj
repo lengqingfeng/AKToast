@@ -16,8 +16,8 @@
 		48111FAE1F175E00009A3D8B /* AKToastTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48111FAD1F175E00009A3D8B /* AKToastTests.m */; };
 		48111FB91F175E00009A3D8B /* AKToastUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48111FB81F175E00009A3D8B /* AKToastUITests.m */; };
 		48111FC81F175E1E009A3D8B /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 48111FC71F175E1E009A3D8B /* MBProgressHUD.m */; };
-		48111FCB1F175E3E009A3D8B /* AKToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 48111FCA1F175E3E009A3D8B /* AKToast.m */; };
-		48AFEAFE1F3BF5D80083CCDE /* AKToastResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 48AFEAFD1F3BF5D80083CCDE /* AKToastResource.bundle */; };
+		48AFEB031F3C08F70083CCDE /* AKToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 48AFEB011F3C08F70083CCDE /* AKToast.m */; };
+		48AFEB041F3C08F70083CCDE /* AKToastResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 48AFEB021F3C08F70083CCDE /* AKToastResource.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,9 +56,9 @@
 		48111FBA1F175E00009A3D8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48111FC61F175E1E009A3D8B /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		48111FC71F175E1E009A3D8B /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		48111FC91F175E3E009A3D8B /* AKToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKToast.h; sourceTree = "<group>"; };
-		48111FCA1F175E3E009A3D8B /* AKToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKToast.m; sourceTree = "<group>"; };
-		48AFEAFD1F3BF5D80083CCDE /* AKToastResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AKToastResource.bundle; sourceTree = "<group>"; };
+		48AFEB001F3C08F70083CCDE /* AKToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKToast.h; sourceTree = "<group>"; };
+		48AFEB011F3C08F70083CCDE /* AKToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKToast.m; sourceTree = "<group>"; };
+		48AFEB021F3C08F70083CCDE /* AKToastResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AKToastResource.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +109,7 @@
 		48111F921F175E00009A3D8B /* AKToast */ = {
 			isa = PBXGroup;
 			children = (
-				48AFEAFC1F3BF2C50083CCDE /* AKToastClass */,
+				48AFEAFF1F3C08F70083CCDE /* AKToast */,
 				48111FC61F175E1E009A3D8B /* MBProgressHUD.h */,
 				48111FC71F175E1E009A3D8B /* MBProgressHUD.m */,
 				48111F961F175E00009A3D8B /* AppDelegate.h */,
@@ -151,14 +151,14 @@
 			path = AKToastUITests;
 			sourceTree = "<group>";
 		};
-		48AFEAFC1F3BF2C50083CCDE /* AKToastClass */ = {
+		48AFEAFF1F3C08F70083CCDE /* AKToast */ = {
 			isa = PBXGroup;
 			children = (
-				48AFEAFD1F3BF5D80083CCDE /* AKToastResource.bundle */,
-				48111FC91F175E3E009A3D8B /* AKToast.h */,
-				48111FCA1F175E3E009A3D8B /* AKToast.m */,
+				48AFEB001F3C08F70083CCDE /* AKToast.h */,
+				48AFEB011F3C08F70083CCDE /* AKToast.m */,
+				48AFEB021F3C08F70083CCDE /* AKToastResource.bundle */,
 			);
-			name = AKToastClass;
+			path = AKToast;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,9 +268,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				48111FA31F175E00009A3D8B /* LaunchScreen.storyboard in Resources */,
+				48AFEB041F3C08F70083CCDE /* AKToastResource.bundle in Resources */,
 				48111FA01F175E00009A3D8B /* Assets.xcassets in Resources */,
 				48111F9E1F175E00009A3D8B /* Main.storyboard in Resources */,
-				48AFEAFE1F3BF5D80083CCDE /* AKToastResource.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +299,7 @@
 				48111F981F175E00009A3D8B /* AppDelegate.m in Sources */,
 				48111F951F175E00009A3D8B /* main.m in Sources */,
 				48111FC81F175E1E009A3D8B /* MBProgressHUD.m in Sources */,
-				48111FCB1F175E3E009A3D8B /* AKToast.m in Sources */,
+				48AFEB031F3C08F70083CCDE /* AKToast.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
