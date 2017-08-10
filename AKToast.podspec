@@ -15,6 +15,18 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
+#   s.name         = 'MJRefresh'
+# s.version      = '3.1.12'
+# s.summary      = 'An easy way to use pull-to-refresh'
+# s.homepage     = 'https://github.com/CoderMJLee/MJRefresh'
+# s.license      = 'MIT'
+# s.authors      = {'MJ Lee' => '199109106@qq.com'}
+# s.platform     = :ios, '6.0'
+# s.source       = {:git => 'https://github.com/CoderMJLee/MJRefresh.git', :tag => s.version}
+# s.source_files = 'MJRefresh/**/*.{h,m}'
+# s.resource     = 'MJRefresh/MJRefresh.bundle'
+# s.requires_arc = true
+
   s.name         = "AKToast"
   s.version      = "0.0.1"
   s.summary      = "A short description of AKToast."
@@ -24,10 +36,9 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = <<-DESC
-                   DESC
+  s.description  = "hud"
 
-  s.homepage     = "http://EXAMPLE/AKToast"
+  s.homepage     = "https://github.com/lengqingfeng/AKToast"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -38,7 +49,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
+  s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -52,7 +63,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "胜任" => "shengren.lsr@alibaba-inc.com" }
+  s.author             = { "胜任" => "379306634@qq.com" }
   # Or just: s.author    = "胜任"
   # s.authors            = { "胜任" => "shengren.lsr@alibaba-inc.com" }
   # s.social_media_url   = "http://twitter.com/胜任"
@@ -63,8 +74,8 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+  s.platform     = :ios
+  s.platform     = :ios, "7.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -79,7 +90,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/AKToast.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/lengqingfeng/AKToast.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,8 +101,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "AKToast", "AKToastClass/**/*.{h,m}"
+  #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -105,7 +116,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  # s.resources = "Resources/*.png"
+  s.resources = "/AKToast/AKToastClass/AKToastResource.bundle"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
@@ -114,11 +125,11 @@ Pod::Spec.new do |s|
   #
   #  Link your library with frameworks, or libraries. Libraries do not include
   #  the lib prefix of their name.
-  #
+  #/
 
   # s.framework  = "SomeFramework"
   # s.frameworks = "SomeFramework", "AnotherFramework"
-
+  s.frameworks = 'Foundation','UIKit'
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
 
@@ -129,9 +140,9 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
+  s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
+  s.dependency "MBProgressHUD", "~> 1.0.0"
 
 end
