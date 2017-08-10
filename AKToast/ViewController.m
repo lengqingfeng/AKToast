@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-//#import "AKToast.h"
+#import "AKToast.h"
 @interface ViewController ()
 
 @end
@@ -16,16 +16,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //[self performSelector:@selector(hidenTOst:) withObject:self afterDelay:5];
+    [self performSelector:@selector(hidenTOst:) withObject:self afterDelay:5];
     // Do any additional setup after loading the view, typically from a nib.
 }
-//
-//- (IBAction)tostTest:(id)sender {
-//    [AKToast showToastSuccessMsg:@"success"];
-//}
-//- (IBAction)hidenTOst:(id)sender {
-//    [AKToast hideToast];
-//}
+
+- (IBAction)tostTest:(id)sender {
+    [AKToast showToastSuccessMsg:@"success"];
+}
+- (IBAction)hidenTOst:(id)sender {
+    [AKToast hideToast];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
