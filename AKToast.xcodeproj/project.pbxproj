@@ -109,7 +109,7 @@
 		48111F921F175E00009A3D8B /* AKToast */ = {
 			isa = PBXGroup;
 			children = (
-				48AFEAFC1F3BF2C50083CCDE /* AKToast */,
+				48AFEAFC1F3BF2C50083CCDE /* AKToastClass */,
 				48111FC61F175E1E009A3D8B /* MBProgressHUD.h */,
 				48111FC71F175E1E009A3D8B /* MBProgressHUD.m */,
 				48111F961F175E00009A3D8B /* AppDelegate.h */,
@@ -151,14 +151,14 @@
 			path = AKToastUITests;
 			sourceTree = "<group>";
 		};
-		48AFEAFC1F3BF2C50083CCDE /* AKToast */ = {
+		48AFEAFC1F3BF2C50083CCDE /* AKToastClass */ = {
 			isa = PBXGroup;
 			children = (
 				48AFEAFD1F3BF5D80083CCDE /* AKToastResource.bundle */,
 				48111FC91F175E3E009A3D8B /* AKToast.h */,
 				48111FCA1F175E3E009A3D8B /* AKToast.m */,
 			);
-			name = AKToast;
+			name = AKToastClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
